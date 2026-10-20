@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Wasil</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleIconName</key>
+	<string>AppIcon</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+
+	<!-- ✅ Allow all network requests -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+
+	<!-- ✅ Required for Location Permissions (Foreground + Background) -->
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app requires your location to show accurate prayer times and Qibla direction.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>This app needs access to your location even in the background to update prayer times accurately.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>This app needs access to your location to function properly.</string>
+
+	<!-- ✅ For Notifications (Azan Alerts) -->
+	<key>NSUserNotificationUsageDescription</key>
+	<string>This app would like to send you notifications for prayer times (Azan).</string>
+	<key>UNUserNotificationCenterUsageDescription</key>
+	<string>We use notifications to remind you of prayer times.</string>
+
+	<!-- ✅ Enable background mode for location, notifications & audio -->
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
+
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+  	<string>stripe</string>
+	</array>
+	
+	<!-- ✅ Fonts -->
+	<key>UIAppFonts</key>
+	<array>
+		<string>Poppins-Black.ttf</string>
+		<string>Poppins-BlackItalic.ttf</string>
+		<string>Poppins-Bold.ttf</string>
+		<string>Poppins-BoldItalic.ttf</string>
+		<string>Poppins-ExtraBold.ttf</string>
+		<string>Poppins-ExtraBoldItalic.ttf</string>
+		<string>Poppins-ExtraLight.ttf</string>
+		<string>Poppins-ExtraLightItalic.ttf</string>
+		<string>Poppins-Italic.ttf</string>
+		<string>Poppins-Light.ttf</string>
+		<string>Poppins-LightItalic.ttf</string>
+		<string>Poppins-Medium.ttf</string>
+		<string>Poppins-MediumItalic.ttf</string>
+		<string>Poppins-Regular.ttf</string>
+		<string>Poppins-SemiBold.ttf</string>
+		<string>Poppins-SemiBoldItalic.ttf</string>
+		<string>Poppins-Thin.ttf</string>
+		<string>Poppins-ThinItalic.ttf</string>
+		<string>Trochut-Bold.ttf</string>
+		<string>Trochut-Italic.ttf</string>
+		<string>Trochut-Regular.ttf</string>
+		<string>arabic.ttf</string>
+		<string>arabic_Al_Qalam.ttf</string>
+		<string>arabic_Indopak.ttf</string>
+		<string>arabic_Tajweed.ttf</string>
+		<string>arabic_Uthmani.ttf</string>
+		<string>arabic_Al_Mushaf_Quran.ttf</string>
+		<string>arabic_AmiriQuran_Regular.ttf</string>
+		<string>arabic_Lateef_Regular.ttf</string>
+		<string>arabic_Madina.ttf</string>
+		<string>arabic_Me_Quran_Regular.ttf</string>
+		<string>arabic_PDMS_IslamicFont_Regular.ttf</string>
+		<string>arabic_PDMS_Saleem_QuranFont_Regular.ttf</string>
+		<string>arabic_ScheherazadeNew_Regular.ttf</string>
+		<string>arabic_noorehidayat_Regular.ttf</string>
+		<string>arabic_noorehira_Regular.ttf</string>
+		<string>arabic_noorehuda_Regular.ttf</string>
+		<string>AlQalamQuran.ttf</string>
+		<string>Raleway.ttf</string>
+		<string>headerfont.ttf</string>
+		<string>heading.ttf</string>
+		<string>urdu.ttf</string>
+
+		<string>NunitoSans-Bold.ttf</string>
+		<string>NunitoSans-SemiBold.ttf</string>
+		<string>NunitoSansMedium.ttf</string>
+		<string>NunitoSansRegular.ttf</string>
+		<string>AsulBold.ttf</string>
+		<string>AsulRegular.ttf</string>
+		<string>sura_names.ttf</string>
+	</array>
+
+	<!-- ✅ Launch Screen -->
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+
+	<!-- ✅ Device capabilities -->
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>arm64</string>
+	</array>
+
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need access to your photos so you can add a photo to the Wall of Remembrance.</string>
+	
+	<!-- ✅ Supported Orientations -->
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+
+	<!-- ✅ Allow opening App Store URLs (fixes itms-appss warning) -->
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>itms-apps</string>
+		<string>itms-appss</string>
+	</array>
+</dict>
+</plist>

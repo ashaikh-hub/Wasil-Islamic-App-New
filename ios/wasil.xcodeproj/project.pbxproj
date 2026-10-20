@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040607AA2E9E48D900F15B8F /* arabic_noorehidayat_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 040607A92E9E48D900F15B8F /* arabic_noorehidayat_Regular.ttf */; };
+		040607AC2E9E48F800F15B8F /* arabic_PDMS_Saleem_QuranFont_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 040607AB2E9E48F800F15B8F /* arabic_PDMS_Saleem_QuranFont_Regular.ttf */; };
+		040607AE2E9E490300F15B8F /* arabic_Al_Qalam.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 040607AD2E9E490300F15B8F /* arabic_Al_Qalam.ttf */; };
+		040607B02E9E491000F15B8F /* arabic_Al_Mushaf_Quran.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 040607AF2E9E491000F15B8F /* arabic_Al_Mushaf_Quran.ttf */; };
+		040D077A2EC4D2E500430E19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D07792EC4D2E500430E19 /* AppDelegate.swift */; };
+		0448C3962F0FE3A400DFFBA5 /* NunitoSansMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0448C3902F0FE3A400DFFBA5 /* NunitoSansMedium.ttf */; };
+		0448C3972F0FE3A400DFFBA5 /* sura_names.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0448C3912F0FE3A400DFFBA5 /* sura_names.ttf */; };
+		0448C3982F0FE3A400DFFBA5 /* NunitoSansRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0448C3922F0FE3A400DFFBA5 /* NunitoSansRegular.ttf */; };
+		0448C3992F0FE3A400DFFBA5 /* NunitoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0448C3932F0FE3A400DFFBA5 /* NunitoSans-Bold.ttf */; };
+		0448C39A2F0FE3A400DFFBA5 /* NunitoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0448C3942F0FE3A400DFFBA5 /* NunitoSans-SemiBold.ttf */; };
+		0448C39B2F0FE3A400DFFBA5 /* AsulRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0448C3952F0FE3A400DFFBA5 /* AsulRegular.ttf */; };
+		045ED5CB2EA446E400D9CEC1 /* AzanScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 045ED5CA2EA446E400D9CEC1 /* AzanScheduler.m */; };
+		045ED5CD2EA446EC00D9CEC1 /* AzanScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045ED5CC2EA446EC00D9CEC1 /* AzanScheduler.swift */; };
+		04A473592ED4BAA000B1CA21 /* azan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04A473582ED4BAA000B1CA21 /* azan.mp3 */; };
+		04A4735B2ED4BAB200B1CA21 /* zanies.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04A4735A2ED4BAB200B1CA21 /* zanies.mp3 */; };
+		04BBED4A2E9E7312007506B0 /* Trochut-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04BBED492E9E7312007506B0 /* Trochut-Bold.ttf */; };
+		04BBED4C2E9E731E007506B0 /* Trochut-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04BBED4B2E9E731E007506B0 /* Trochut-Italic.ttf */; };
+		04BBED4E2E9E732C007506B0 /* Trochut-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04BBED4D2E9E732C007506B0 /* Trochut-Regular.ttf */; };
+		04BBED502E9E733B007506B0 /* arabic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04BBED4F2E9E733B007506B0 /* arabic.ttf */; };
+		04BBED522E9E7352007506B0 /* arabic_Indopak.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04BBED512E9E7352007506B0 /* arabic_Indopak.ttf */; };
+		04BBED542E9E7369007506B0 /* arabic_Tajweed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04BBED532E9E7369007506B0 /* arabic_Tajweed.ttf */; };
+		04BBED562E9E7375007506B0 /* arabic_Uthmani.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04BBED552E9E7375007506B0 /* arabic_Uthmani.ttf */; };
+		04BBED582E9E738A007506B0 /* arabic_AmiriQuran_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04BBED572E9E738A007506B0 /* arabic_AmiriQuran_Regular.ttf */; };
+		04BBED5A2E9E739A007506B0 /* arabic_Lateef_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04BBED592E9E739A007506B0 /* arabic_Lateef_Regular.ttf */; };
+		04BBED5C2E9E73AA007506B0 /* arabic_Madina.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04BBED5B2E9E73AA007506B0 /* arabic_Madina.ttf */; };
+		04BBED5E2E9E73B5007506B0 /* arabic_Me_Quran_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04BBED5D2E9E73B5007506B0 /* arabic_Me_Quran_Regular.ttf */; };
+		04BBED602E9E73CC007506B0 /* arabic_PDMS_IslamicFont_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04BBED5F2E9E73CC007506B0 /* arabic_PDMS_IslamicFont_Regular.ttf */; };
+		04BBED622E9E73DA007506B0 /* arabic_ScheherazadeNew_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04BBED612E9E73DA007506B0 /* arabic_ScheherazadeNew_Regular.ttf */; };
+		04C7F4E52F0FD54300DBC11E /* AsulBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C7F4E42F0FD54300DBC11E /* AsulBold.ttf */; };
+		04CC9C302E9D9182000B158C /* arabic_noorehuda_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04CC9C2F2E9D9182000B158C /* arabic_noorehuda_Regular.ttf */; };
+		04CC9C322E9D920F000B158C /* arabic_noorehira_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04CC9C312E9D920F000B158C /* arabic_noorehira_Regular.ttf */; };
+		0DE402588FAC47E89C74E566 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B759B8830F4BAF9D6C4D36 /* Poppins-LightItalic.ttf */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		1BDF7020A1B50D6DD0DC3970 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4C7BCDA660E1D8923BC03210 /* PrivacyInfo.xcprivacy */; };
+		224FA96F64354B678ADAB5DC /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FCBF10244C149F6AB1FDBAB /* Poppins-ExtraLightItalic.ttf */; };
+		258F70C7F0E2492092A0759C /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6CD7762B93F94B76A9479C6C /* Poppins-ExtraBoldItalic.ttf */; };
+		26213277281346109FE9345B /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D28D2E385556476796690304 /* Poppins-SemiBoldItalic.ttf */; };
+		30C9692462DE49378D759B40 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 774AA5B8F97949988E966D43 /* Poppins-MediumItalic.ttf */; };
+		3F64B0EC115A462EA65D5868 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCB1C089F87B44BF996CAA30 /* Poppins-Medium.ttf */; };
+		42FCDCB07BF74D45944DE797 /* AlQalamQuran.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C58B6D80B22C46B58B1A0B47 /* AlQalamQuran.ttf */; };
+		46196DE1839741D98DF0CB38 /* headerfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DF134E768D345289785B9AE /* headerfont.ttf */; };
+		475F5B3BB68D41FCB14B0CF3 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEC6D4D1D2D3476BB45076F2 /* Poppins-ThinItalic.ttf */; };
+		4D6895A1D28E40BF87F7363A /* urdu.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84813EDE29B64625A0F8EF2F /* urdu.ttf */; };
+		503557BFFD619AAA05CA332C /* libPods-wasil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4040E2E1E0903457493E5EC /* libPods-wasil.a */; };
+		55868A2206A64758AB1824C2 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A4CC02A04B0492CB86E5E7E /* Poppins-Light.ttf */; };
+		602748109DFC4D8C812728D2 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B0FC6B91C354DE0ABE837A4 /* Poppins-SemiBold.ttf */; };
+		74B125D3F8064E5F97C0FDED /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B908D8113F0403F995F45A4 /* Poppins-Black.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8F432E862F7A4EE4BDB2F613 /* heading.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F24D17AFB10448F3933B969E /* heading.ttf */; };
+		949DE591B71C4A7C821ED8B3 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B105605E8F504943A32844D5 /* Poppins-BlackItalic.ttf */; };
+		9F82CD9C960645AD955CA310 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D9277E25CA84D2080503CE7 /* Poppins-Italic.ttf */; };
+		A8EA648EB62B4C529FC9FC03 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2DF853B24894C76A2DD9B25 /* Poppins-Regular.ttf */; };
+		C770248B9DD34BDF9168BA8C /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67CDD4E75AE44B30B7CD4EF8 /* Poppins-Thin.ttf */; };
+		DD7B068B75F4498EB1E122B6 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09B6AFDD0A9E42C19C8716B3 /* Poppins-ExtraLight.ttf */; };
+		E6E73883D6D14C7F874DFA9A /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 924F6CC5DF4E4786999B3D83 /* Poppins-Bold.ttf */; };
+		ED6C6052CA614D49B9DCA7C1 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 548A44472D324AE99C243EC2 /* Poppins-ExtraBold.ttf */; };
+		F3A6B28E51A1445EBB876C0F /* Raleway.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BCCF575D2904CAC8215B697 /* Raleway.ttf */; };
+		F42B22A4D15A4C1686B4585D /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1714EDF9D54C4E6A81B083F2 /* Poppins-BoldItalic.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		040607A92E9E48D900F15B8F /* arabic_noorehidayat_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = arabic_noorehidayat_Regular.ttf; path = ../assets/fonts/arabic_noorehidayat_Regular.ttf; sourceTree = "<group>"; };
+		040607AB2E9E48F800F15B8F /* arabic_PDMS_Saleem_QuranFont_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = arabic_PDMS_Saleem_QuranFont_Regular.ttf; path = ../assets/fonts/arabic_PDMS_Saleem_QuranFont_Regular.ttf; sourceTree = "<group>"; };
+		040607AD2E9E490300F15B8F /* arabic_Al_Qalam.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = arabic_Al_Qalam.ttf; path = ../assets/fonts/arabic_Al_Qalam.ttf; sourceTree = "<group>"; };
+		040607AF2E9E491000F15B8F /* arabic_Al_Mushaf_Quran.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = arabic_Al_Mushaf_Quran.ttf; path = ../assets/fonts/arabic_Al_Mushaf_Quran.ttf; sourceTree = "<group>"; };
+		040D07792EC4D2E500430E19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = wasil/AppDelegate.swift; sourceTree = "<group>"; };
+		0448C3902F0FE3A400DFFBA5 /* NunitoSansMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NunitoSansMedium.ttf; path = ../assets/fonts/NunitoSansMedium.ttf; sourceTree = "<group>"; };
+		0448C3912F0FE3A400DFFBA5 /* sura_names.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = sura_names.ttf; path = ../assets/fonts/sura_names.ttf; sourceTree = "<group>"; };
+		0448C3922F0FE3A400DFFBA5 /* NunitoSansRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NunitoSansRegular.ttf; path = ../assets/fonts/NunitoSansRegular.ttf; sourceTree = "<group>"; };
+		0448C3932F0FE3A400DFFBA5 /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NunitoSans-Bold.ttf"; path = "../assets/fonts/NunitoSans-Bold.ttf"; sourceTree = "<group>"; };
+		0448C3942F0FE3A400DFFBA5 /* NunitoSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NunitoSans-SemiBold.ttf"; path = "../assets/fonts/NunitoSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		0448C3952F0FE3A400DFFBA5 /* AsulRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AsulRegular.ttf; path = ../assets/fonts/AsulRegular.ttf; sourceTree = "<group>"; };
+		045ED5CA2EA446E400D9CEC1 /* AzanScheduler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AzanScheduler.m; path = wasil/AzanScheduler.m; sourceTree = "<group>"; };
+		045ED5CC2EA446EC00D9CEC1 /* AzanScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AzanScheduler.swift; path = wasil/AzanScheduler.swift; sourceTree = "<group>"; };
+		0499A3B22ECF17B500528E9C /* azan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = azan.mp3; sourceTree = "<group>"; };
+		0499A3B42ECF17C300528E9C /* zanies.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zanies.mp3; sourceTree = "<group>"; };
+		0499A3B62ECF188800528E9C /* azan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = azan.mp3; path = ../../../../Downloads/azan.mp3; sourceTree = "<group>"; };
+		0499A3B82ECF189000528E9C /* zanies.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = zanies.mp3; path = ../../../../Downloads/zanies.mp3; sourceTree = "<group>"; };
+		04A473582ED4BAA000B1CA21 /* azan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = azan.mp3; sourceTree = "<group>"; };
+		04A4735A2ED4BAB200B1CA21 /* zanies.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zanies.mp3; sourceTree = "<group>"; };
+		04BBED492E9E7312007506B0 /* Trochut-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Trochut-Bold.ttf"; path = "../assets/fonts/Trochut-Bold.ttf"; sourceTree = "<group>"; };
+		04BBED4B2E9E731E007506B0 /* Trochut-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Trochut-Italic.ttf"; path = "../assets/fonts/Trochut-Italic.ttf"; sourceTree = "<group>"; };
+		04BBED4D2E9E732C007506B0 /* Trochut-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Trochut-Regular.ttf"; path = "../assets/fonts/Trochut-Regular.ttf"; sourceTree = "<group>"; };
+		04BBED4F2E9E733B007506B0 /* arabic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = arabic.ttf; path = ../assets/fonts/arabic.ttf; sourceTree = "<group>"; };
+		04BBED512E9E7352007506B0 /* arabic_Indopak.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = arabic_Indopak.ttf; path = ../assets/fonts/arabic_Indopak.ttf; sourceTree = "<group>"; };
+		04BBED532E9E7369007506B0 /* arabic_Tajweed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = arabic_Tajweed.ttf; path = ../assets/fonts/arabic_Tajweed.ttf; sourceTree = "<group>"; };
+		04BBED552E9E7375007506B0 /* arabic_Uthmani.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = arabic_Uthmani.ttf; path = ../assets/fonts/arabic_Uthmani.ttf; sourceTree = "<group>"; };
+		04BBED572E9E738A007506B0 /* arabic_AmiriQuran_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = arabic_AmiriQuran_Regular.ttf; path = ../assets/fonts/arabic_AmiriQuran_Regular.ttf; sourceTree = "<group>"; };
+		04BBED592E9E739A007506B0 /* arabic_Lateef_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = arabic_Lateef_Regular.ttf; path = ../assets/fonts/arabic_Lateef_Regular.ttf; sourceTree = "<group>"; };
+		04BBED5B2E9E73AA007506B0 /* arabic_Madina.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = arabic_Madina.ttf; path = ../assets/fonts/arabic_Madina.ttf; sourceTree = "<group>"; };
+		04BBED5D2E9E73B5007506B0 /* arabic_Me_Quran_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = arabic_Me_Quran_Regular.ttf; path = ../assets/fonts/arabic_Me_Quran_Regular.ttf; sourceTree = "<group>"; };
+		04BBED5F2E9E73CC007506B0 /* arabic_PDMS_IslamicFont_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = arabic_PDMS_IslamicFont_Regular.ttf; path = ../assets/fonts/arabic_PDMS_IslamicFont_Regular.ttf; sourceTree = "<group>"; };
+		04BBED612E9E73DA007506B0 /* arabic_ScheherazadeNew_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = arabic_ScheherazadeNew_Regular.ttf; path = ../assets/fonts/arabic_ScheherazadeNew_Regular.ttf; sourceTree = "<group>"; };
+		04C7F4E42F0FD54300DBC11E /* AsulBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AsulBold.ttf; path = ../assets/fonts/AsulBold.ttf; sourceTree = "<group>"; };
+		04CC9C2F2E9D9182000B158C /* arabic_noorehuda_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = arabic_noorehuda_Regular.ttf; path = ../assets/fonts/arabic_noorehuda_Regular.ttf; sourceTree = "<group>"; };
+		04CC9C312E9D920F000B158C /* arabic_noorehira_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = arabic_noorehira_Regular.ttf; path = ../assets/fonts/arabic_noorehira_Regular.ttf; sourceTree = "<group>"; };
+		09B6AFDD0A9E42C19C8716B3 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLight.ttf"; path = "../src/assets/font/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* wasil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wasil.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = wasil/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = wasil/Info.plist; sourceTree = "<group>"; };
+		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = wasil/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		1714EDF9D54C4E6A81B083F2 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-BoldItalic.ttf"; path = "../src/assets/font/Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		1D9277E25CA84D2080503CE7 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Italic.ttf"; path = "../src/assets/font/Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		3B0FC6B91C354DE0ABE837A4 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../src/assets/font/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		4A4CC02A04B0492CB86E5E7E /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../src/assets/font/Poppins-Light.ttf"; sourceTree = "<group>"; };
+		4C7BCDA660E1D8923BC03210 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = wasil/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		548A44472D324AE99C243EC2 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBold.ttf"; path = "../src/assets/font/Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		5FCBF10244C149F6AB1FDBAB /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLightItalic.ttf"; path = "../src/assets/font/Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		67548A1A385445CCD90CCC07 /* Pods-wasil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wasil.debug.xcconfig"; path = "Target Support Files/Pods-wasil/Pods-wasil.debug.xcconfig"; sourceTree = "<group>"; };
+		67CDD4E75AE44B30B7CD4EF8 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Thin.ttf"; path = "../src/assets/font/Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		6BCCF575D2904CAC8215B697 /* Raleway.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Raleway.ttf; path = ../src/assets/font/Raleway.ttf; sourceTree = "<group>"; };
+		6CD7762B93F94B76A9479C6C /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBoldItalic.ttf"; path = "../src/assets/font/Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = RnDiffApp/AppDelegate.swift; sourceTree = "<group>"; };
+		774AA5B8F97949988E966D43 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-MediumItalic.ttf"; path = "../src/assets/font/Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		7DF134E768D345289785B9AE /* headerfont.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = headerfont.ttf; path = ../src/assets/font/headerfont.ttf; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = wasil/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84813EDE29B64625A0F8EF2F /* urdu.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = urdu.ttf; path = ../src/assets/font/urdu.ttf; sourceTree = "<group>"; };
+		924F6CC5DF4E4786999B3D83 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../src/assets/font/Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		96B3679BAF709D0C1856ADB2 /* Pods-wasil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wasil.release.xcconfig"; path = "Target Support Files/Pods-wasil/Pods-wasil.release.xcconfig"; sourceTree = "<group>"; };
+		9B908D8113F0403F995F45A4 /* Poppins-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Black.ttf"; path = "../src/assets/font/Poppins-Black.ttf"; sourceTree = "<group>"; };
+		A4040E2E1E0903457493E5EC /* libPods-wasil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wasil.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B105605E8F504943A32844D5 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-BlackItalic.ttf"; path = "../src/assets/font/Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		BCB1C089F87B44BF996CAA30 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../src/assets/font/Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		C58B6D80B22C46B58B1A0B47 /* AlQalamQuran.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AlQalamQuran.ttf; path = ../src/assets/font/AlQalamQuran.ttf; sourceTree = "<group>"; };
+		D28D2E385556476796690304 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBoldItalic.ttf"; path = "../src/assets/font/Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		E9B759B8830F4BAF9D6C4D36 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-LightItalic.ttf"; path = "../src/assets/font/Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EEC6D4D1D2D3476BB45076F2 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ThinItalic.ttf"; path = "../src/assets/font/Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		F24D17AFB10448F3933B969E /* heading.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = heading.ttf; path = ../src/assets/font/heading.ttf; sourceTree = "<group>"; };
+		F2DF853B24894C76A2DD9B25 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../src/assets/font/Poppins-Regular.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503557BFFD619AAA05CA332C /* libPods-wasil.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13B07FAE1A68108700A75B9A /* wasil */ = {
+			isa = PBXGroup;
+			children = (
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				761780EC2CA45674006654EE /* AppDelegate.swift */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				4C7BCDA660E1D8923BC03210 /* PrivacyInfo.xcprivacy */,
+			);
+			name = wasil;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				A4040E2E1E0903457493E5EC /* libPods-wasil.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				0448C3952F0FE3A400DFFBA5 /* AsulRegular.ttf */,
+				0448C3932F0FE3A400DFFBA5 /* NunitoSans-Bold.ttf */,
+				0448C3942F0FE3A400DFFBA5 /* NunitoSans-SemiBold.ttf */,
+				0448C3902F0FE3A400DFFBA5 /* NunitoSansMedium.ttf */,
+				0448C3922F0FE3A400DFFBA5 /* NunitoSansRegular.ttf */,
+				0448C3912F0FE3A400DFFBA5 /* sura_names.ttf */,
+				04C7F4E42F0FD54300DBC11E /* AsulBold.ttf */,
+				04A4735A2ED4BAB200B1CA21 /* zanies.mp3 */,
+				04A473582ED4BAA000B1CA21 /* azan.mp3 */,
+				0499A3B82ECF189000528E9C /* zanies.mp3 */,
+				0499A3B62ECF188800528E9C /* azan.mp3 */,
+				040D07792EC4D2E500430E19 /* AppDelegate.swift */,
+				045ED5CC2EA446EC00D9CEC1 /* AzanScheduler.swift */,
+				045ED5CA2EA446E400D9CEC1 /* AzanScheduler.m */,
+				04BBED612E9E73DA007506B0 /* arabic_ScheherazadeNew_Regular.ttf */,
+				04BBED5F2E9E73CC007506B0 /* arabic_PDMS_IslamicFont_Regular.ttf */,
+				04BBED5D2E9E73B5007506B0 /* arabic_Me_Quran_Regular.ttf */,
+				04BBED5B2E9E73AA007506B0 /* arabic_Madina.ttf */,
+				04BBED592E9E739A007506B0 /* arabic_Lateef_Regular.ttf */,
+				04BBED572E9E738A007506B0 /* arabic_AmiriQuran_Regular.ttf */,
+				04BBED552E9E7375007506B0 /* arabic_Uthmani.ttf */,
+				04BBED532E9E7369007506B0 /* arabic_Tajweed.ttf */,
+				04BBED512E9E7352007506B0 /* arabic_Indopak.ttf */,
+				04BBED4F2E9E733B007506B0 /* arabic.ttf */,
+				04BBED4D2E9E732C007506B0 /* Trochut-Regular.ttf */,
+				04BBED4B2E9E731E007506B0 /* Trochut-Italic.ttf */,
+				04BBED492E9E7312007506B0 /* Trochut-Bold.ttf */,
+				040607AF2E9E491000F15B8F /* arabic_Al_Mushaf_Quran.ttf */,
+				040607AD2E9E490300F15B8F /* arabic_Al_Qalam.ttf */,
+				040607AB2E9E48F800F15B8F /* arabic_PDMS_Saleem_QuranFont_Regular.ttf */,
+				040607A92E9E48D900F15B8F /* arabic_noorehidayat_Regular.ttf */,
+				04CC9C312E9D920F000B158C /* arabic_noorehira_Regular.ttf */,
+				04CC9C2F2E9D9182000B158C /* arabic_noorehuda_Regular.ttf */,
+				13B07FAE1A68108700A75B9A /* wasil */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				8E1FDDFD2D7149D68854370A /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* wasil.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E1FDDFD2D7149D68854370A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0499A3B42ECF17C300528E9C /* zanies.mp3 */,
+				0499A3B22ECF17B500528E9C /* azan.mp3 */,
+				9B908D8113F0403F995F45A4 /* Poppins-Black.ttf */,
+				B105605E8F504943A32844D5 /* Poppins-BlackItalic.ttf */,
+				924F6CC5DF4E4786999B3D83 /* Poppins-Bold.ttf */,
+				1714EDF9D54C4E6A81B083F2 /* Poppins-BoldItalic.ttf */,
+				548A44472D324AE99C243EC2 /* Poppins-ExtraBold.ttf */,
+				6CD7762B93F94B76A9479C6C /* Poppins-ExtraBoldItalic.ttf */,
+				09B6AFDD0A9E42C19C8716B3 /* Poppins-ExtraLight.ttf */,
+				5FCBF10244C149F6AB1FDBAB /* Poppins-ExtraLightItalic.ttf */,
+				1D9277E25CA84D2080503CE7 /* Poppins-Italic.ttf */,
+				4A4CC02A04B0492CB86E5E7E /* Poppins-Light.ttf */,
+				E9B759B8830F4BAF9D6C4D36 /* Poppins-LightItalic.ttf */,
+				BCB1C089F87B44BF996CAA30 /* Poppins-Medium.ttf */,
+				774AA5B8F97949988E966D43 /* Poppins-MediumItalic.ttf */,
+				F2DF853B24894C76A2DD9B25 /* Poppins-Regular.ttf */,
+				3B0FC6B91C354DE0ABE837A4 /* Poppins-SemiBold.ttf */,
+				D28D2E385556476796690304 /* Poppins-SemiBoldItalic.ttf */,
+				67CDD4E75AE44B30B7CD4EF8 /* Poppins-Thin.ttf */,
+				EEC6D4D1D2D3476BB45076F2 /* Poppins-ThinItalic.ttf */,
+				C58B6D80B22C46B58B1A0B47 /* AlQalamQuran.ttf */,
+				6BCCF575D2904CAC8215B697 /* Raleway.ttf */,
+				7DF134E768D345289785B9AE /* headerfont.ttf */,
+				F24D17AFB10448F3933B969E /* heading.ttf */,
+				84813EDE29B64625A0F8EF2F /* urdu.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67548A1A385445CCD90CCC07 /* Pods-wasil.debug.xcconfig */,
+				96B3679BAF709D0C1856ADB2 /* Pods-wasil.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B07F861A680F5B00A75B9A /* wasil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "wasil" */;
+			buildPhases = (
+				86AEBB8A26C85F9D0FB4E06C /* [CP] Check Pods Manifest.lock */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				C9B829A73CBEF1E4D3A1B85B /* [CP] Embed Pods Frameworks */,
+				7AEF4314BFD6F6F4C6FE1F22 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wasil;
+			productName = wasil;
+			productReference = 13B07F961A680F5B00A75B9A /* wasil.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "wasil" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* wasil */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0448C3962F0FE3A400DFFBA5 /* NunitoSansMedium.ttf in Resources */,
+				0448C3972F0FE3A400DFFBA5 /* sura_names.ttf in Resources */,
+				0448C3982F0FE3A400DFFBA5 /* NunitoSansRegular.ttf in Resources */,
+				0448C3992F0FE3A400DFFBA5 /* NunitoSans-Bold.ttf in Resources */,
+				0448C39A2F0FE3A400DFFBA5 /* NunitoSans-SemiBold.ttf in Resources */,
+				0448C39B2F0FE3A400DFFBA5 /* AsulRegular.ttf in Resources */,
+				04C7F4E52F0FD54300DBC11E /* AsulBold.ttf in Resources */,
+				04A4735B2ED4BAB200B1CA21 /* zanies.mp3 in Resources */,
+				04A473592ED4BAA000B1CA21 /* azan.mp3 in Resources */,
+				04BBED622E9E73DA007506B0 /* arabic_ScheherazadeNew_Regular.ttf in Resources */,
+				04BBED602E9E73CC007506B0 /* arabic_PDMS_IslamicFont_Regular.ttf in Resources */,
+				04BBED5E2E9E73B5007506B0 /* arabic_Me_Quran_Regular.ttf in Resources */,
+				04BBED5C2E9E73AA007506B0 /* arabic_Madina.ttf in Resources */,
+				04BBED5A2E9E739A007506B0 /* arabic_Lateef_Regular.ttf in Resources */,
+				04BBED582E9E738A007506B0 /* arabic_AmiriQuran_Regular.ttf in Resources */,
+				04BBED562E9E7375007506B0 /* arabic_Uthmani.ttf in Resources */,
+				04BBED542E9E7369007506B0 /* arabic_Tajweed.ttf in Resources */,
+				04BBED522E9E7352007506B0 /* arabic_Indopak.ttf in Resources */,
+				04BBED502E9E733B007506B0 /* arabic.ttf in Resources */,
+				04BBED4E2E9E732C007506B0 /* Trochut-Regular.ttf in Resources */,
+				04BBED4C2E9E731E007506B0 /* Trochut-Italic.ttf in Resources */,
+				04BBED4A2E9E7312007506B0 /* Trochut-Bold.ttf in Resources */,
+				040607B02E9E491000F15B8F /* arabic_Al_Mushaf_Quran.ttf in Resources */,
+				040607AE2E9E490300F15B8F /* arabic_Al_Qalam.ttf in Resources */,
+				040607AC2E9E48F800F15B8F /* arabic_PDMS_Saleem_QuranFont_Regular.ttf in Resources */,
+				040607AA2E9E48D900F15B8F /* arabic_noorehidayat_Regular.ttf in Resources */,
+				04CC9C322E9D920F000B158C /* arabic_noorehira_Regular.ttf in Resources */,
+				04CC9C302E9D9182000B158C /* arabic_noorehuda_Regular.ttf in Resources */,
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				1BDF7020A1B50D6DD0DC3970 /* PrivacyInfo.xcprivacy in Resources */,
+				74B125D3F8064E5F97C0FDED /* Poppins-Black.ttf in Resources */,
+				949DE591B71C4A7C821ED8B3 /* Poppins-BlackItalic.ttf in Resources */,
+				E6E73883D6D14C7F874DFA9A /* Poppins-Bold.ttf in Resources */,
+				F42B22A4D15A4C1686B4585D /* Poppins-BoldItalic.ttf in Resources */,
+				ED6C6052CA614D49B9DCA7C1 /* Poppins-ExtraBold.ttf in Resources */,
+				258F70C7F0E2492092A0759C /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				DD7B068B75F4498EB1E122B6 /* Poppins-ExtraLight.ttf in Resources */,
+				224FA96F64354B678ADAB5DC /* Poppins-ExtraLightItalic.ttf in Resources */,
+				9F82CD9C960645AD955CA310 /* Poppins-Italic.ttf in Resources */,
+				55868A2206A64758AB1824C2 /* Poppins-Light.ttf in Resources */,
+				0DE402588FAC47E89C74E566 /* Poppins-LightItalic.ttf in Resources */,
+				3F64B0EC115A462EA65D5868 /* Poppins-Medium.ttf in Resources */,
+				30C9692462DE49378D759B40 /* Poppins-MediumItalic.ttf in Resources */,
+				A8EA648EB62B4C529FC9FC03 /* Poppins-Regular.ttf in Resources */,
+				602748109DFC4D8C812728D2 /* Poppins-SemiBold.ttf in Resources */,
+				26213277281346109FE9345B /* Poppins-SemiBoldItalic.ttf in Resources */,
+				C770248B9DD34BDF9168BA8C /* Poppins-Thin.ttf in Resources */,
+				475F5B3BB68D41FCB14B0CF3 /* Poppins-ThinItalic.ttf in Resources */,
+				42FCDCB07BF74D45944DE797 /* AlQalamQuran.ttf in Resources */,
+				F3A6B28E51A1445EBB876C0F /* Raleway.ttf in Resources */,
+				46196DE1839741D98DF0CB38 /* headerfont.ttf in Resources */,
+				8F432E862F7A4EE4BDB2F613 /* heading.ttf in Resources */,
+				4D6895A1D28E40BF87F7363A /* urdu.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		7AEF4314BFD6F6F4C6FE1F22 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wasil/Pods-wasil-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wasil/Pods-wasil-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wasil/Pods-wasil-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86AEBB8A26C85F9D0FB4E06C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wasil-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9B829A73CBEF1E4D3A1B85B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wasil/Pods-wasil-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wasil/Pods-wasil-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wasil/Pods-wasil-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040D077A2EC4D2E500430E19 /* AppDelegate.swift in Sources */,
+				045ED5CD2EA446EC00D9CEC1 /* AzanScheduler.swift in Sources */,
+				045ED5CB2EA446E400D9CEC1 /* AzanScheduler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67548A1A385445CCD90CCC07 /* Pods-wasil.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q9TD76NX98;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = wasil/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Wasil;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0.3;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wasilislamicapp;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.wasilislamicapp;
+				PRODUCT_NAME = wasil;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = WasilApp_Production_New;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/wasil/wasil-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96B3679BAF709D0C1856ADB2 /* Pods-wasil.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q9TD76NX98;
+				INFOPLIST_FILE = wasil/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Wasil;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0.3;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wasilislamicapp;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.wasilislamicapp;
+				PRODUCT_NAME = wasil;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = WasilApp_Production_New;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/wasil/wasil-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CXX = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD = "";
+				LDPLUSPLUS = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				USE_HERMES = true;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CXX = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD = "";
+				LDPLUSPLUS = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				USE_HERMES = true;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "wasil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "wasil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}
