@@ -96,7 +96,7 @@ const SurahFullView = ({navigation, route}) => {
     TrackPlayer.setupPlayer().then(() => {});
 
     TrackPlayer.addEventListener('playback-queue-ended', async () => {
-      console.log('Track ended', surahDetail?.id);
+      console.log('Track ended');
       setIsPlaying(false);
     });
     const unsubscribe = navigation.addListener('blur', async () => {
@@ -115,6 +115,8 @@ const SurahFullView = ({navigation, route}) => {
   }, []);
 
   const getRecitationsData = async (reciter_id, currentPageIndex, isReset) => {
+    let errorStatus;
+    let errorMessage;
     try {
       const recitationsData = await getAudioUrlByPage(
         reciter_id,

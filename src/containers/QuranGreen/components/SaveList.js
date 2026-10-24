@@ -1,5 +1,6 @@
 import React from 'react';
 import {Text, View} from 'react-native';
+import {Platform} from 'react-native';
 import {ScaledSheet} from 'react-native-size-matters';
 import {useSelector} from 'react-redux';
 import {getStorageItem} from '../mmkvStorage/storeData';

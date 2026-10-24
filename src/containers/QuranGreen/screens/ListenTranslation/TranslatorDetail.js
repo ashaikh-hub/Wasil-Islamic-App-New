@@ -776,7 +776,7 @@ export default function TranslatorDetail({ route }) {
 
   }, [
     position,
-    duration,
+    duration, progressAnim,
   ]);
 
 

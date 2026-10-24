@@ -225,8 +225,6 @@ const styles = ScaledSheet.create({
      flexDirection: 'row',
      width: '95%',
      height: 70,
-     borderWidth:1,
-     marginTop:10,
      borderColor: COLORS.lightSlateGray,
      borderWidth: 1,
      marginTop: 10,

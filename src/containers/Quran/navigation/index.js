@@ -3,7 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {Colors} from '../../../theme';
 import {View,TouchableOpacity,Platform} from 'react-native';
-import {HeartfilledSVG,WasilNewTasbihHeartUnFilled,WasilNewTranslateSvg} from '../../../assets/icons';
+import {HeartfilledSVG,WasilNewTasbihHeartUnFilled,WasilNewTranslateSvg,QuranBottomSettingSVG} from '../../../assets/icons';
 import useStore from '../../../store'
 import useStorehadith from '../../../hadithstore';
 import useStoreTasbih from '../../../tasbihstore';

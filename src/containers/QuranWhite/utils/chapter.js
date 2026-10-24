@@ -72,37 +72,37 @@ export const getChapterData = (chapters, id) =>
   chapters[formatStringNumber(id)];
 
 export const getChapterIdsForPage = async pageId => {
-  return new Promise(res => {
+  return new Promise((res, rej) => {
     import(`../data/page-to-chapter-mappings.json`)
       .then(data => {
         res(data?.default[pageId]);
       })
       .catch(error => {
-        reject(error);
+        rej(error);
       });
   });
 };
 
 export const getChapterIdsForJuz = juzId => {
-  return new Promise(res => {
+  return new Promise((res, rej) => {
     import(`../data/juz-to-chapter-mappings.json`)
       .then(data => {
         res(data?.default[juzId]);
       })
       .catch(error => {
-        reject(error);
+        rej(error);
       });
   });
 };
 
 export const getAllJuzMappings = () => {
-  return new Promise(res => {
+  return new Promise((res, rej) => {
     import('../data/juz-to-chapter-verse-mappings.json')
       .then(data => {
         res(data.default);
       })
       .catch(error => {
-        reject(error);
+        rej(error);
       });
   });
 };

@@ -26,7 +26,12 @@ import {
   IslamicStoryPlayPreviousSVG,
   IslamicStoryPlayBTAudioSVG,
   IslamicStoryPauseBTAudioSVG,
+  IslamicStoryPlayAudioSVG,
+  IslamicStoryPauseAudioSVG,
 } from "../../assets/icons";
+import ReciterAvatar from "./ReciterAvatar";
+import { useTheme, Fonts, TypeScale, MIN_TOUCH } from "../../theme";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { Colors } from "../../theme";
 
@@ -224,7 +229,7 @@ export default function MiniPlayer() {
       duration: 200,
       useNativeDriver: false,
     }).start();
-  }, [position, duration]);
+  }, [position, duration, progressAnim]);
 
   // ---------------------------------------------------------
   // RECITER

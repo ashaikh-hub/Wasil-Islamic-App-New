@@ -110,7 +110,6 @@ const styles = ScaledSheet.create({
 
    subText: {
     textAlign: 'center',
-    color: COLORS.slateGray,
     fontFamily: "Poppins-SemiBold",
     fontSize: 10,
     color: COLORS.wasilnewthemecolorsecondBlue,

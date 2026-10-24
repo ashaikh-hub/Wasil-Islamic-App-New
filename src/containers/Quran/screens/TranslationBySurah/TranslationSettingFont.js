@@ -103,10 +103,6 @@ const styles = ScaledSheet.create({
     paddingHorizontal: '15@s',
     marginBottom: '8@s',
   },
-  line: {
-    height: 1.2,
-    backgroundColor: COLORS.secondGray,
-  },
   lineView: {
     height: 1,
     marginVertical: '10@s',
@@ -162,7 +158,6 @@ const styles = ScaledSheet.create({
   },
   detailContainer: {
     padding: '10@s',
-    borderColor: COLORS.lightSlateGray,
     marginBottom: '8@s',
     borderWidth: 1.2,
     borderColor: COLORS.paleGray,

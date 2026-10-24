@@ -173,7 +173,6 @@ const styles = StyleSheet.create({
     bottom: 0,
 
     zIndex: 999999,
-    elevation: 999999,
 
     backgroundColor: '#FFFFFF',
 

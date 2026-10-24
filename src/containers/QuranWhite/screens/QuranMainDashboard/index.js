@@ -646,12 +646,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  arrowText: {
-    color: '#FFF',
-    fontSize: 22,
-    fontWeight: '600',
-    marginTop: -2,
-  },
 
   // ===== LEARN CARDS =====
  learnRow: {

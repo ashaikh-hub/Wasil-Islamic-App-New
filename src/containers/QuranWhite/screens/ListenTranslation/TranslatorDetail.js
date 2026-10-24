@@ -421,7 +421,7 @@ export default function TranslatorDetail({ route }) {
       }
     ).start();
 
-  }, [position, duration]);
+  }, [position, duration, progressAnim]);
 
 
   // ============================================================

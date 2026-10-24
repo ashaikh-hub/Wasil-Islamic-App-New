@@ -45,6 +45,15 @@ import {getVerseAndChapterNumbersFromKey} from '../../utils/verse';
 import {generateVerseKeysBetweenTwoVerseKeys,parseVerseRange,} from '../../utils/verseKeys';
 import { Colors } from '../../../../theme';
 import { SURAH_NAMES } from '../../../Reciters/surahNames'; 
+// Ayat al-Kursi is Quran verse 2:255; the app already maps to this key below.
+// The approved slug list is NOT in the snapshot and must not be invented; while empty,
+// only the verse-key path (and the normal slug lookup) is active.
+const AYAH_KURSI_VERSE_KEY = '2:255';
+// Resume prompt is OFF by default: it changes the play-button journey and needs device testing.
+// Enable only in a test build. When OFF, the play button behaves exactly as in the uploaded snapshot.
+const ENABLE_RESUME_PROMPT = false;
+const AYAH_KURSI_SLUGS = [];
+
 const { height} = Dimensions.get('window');
 import {
  WasilNewMakkahSvg,WasilNewMadinaSvg
@@ -55,7 +64,16 @@ const SurahDetailPage = ({navigation, route}) => {
   const {ayahIdFromBookmark,ayahKeyFromBookmark,selectedAyahItems,selectedSurahItems,fromPinAyah,fromBookmarkAyah,fromjuz,from,rukuNumber,fromqc,surahNumber,headersurahname,continuePlaying} = route.params;
   const reciters = getStorageItem('reciters');
   const selectedReciter = getStorageItem('reciters');
-  const saveCurrentAyah = getStorageItem('saveCurrentAyah');
+  // Exact resume point: the last-listening record written during playback.
+  // Only an unfinished record with a verse key and a surah is offered for resume.
+  const lastListening = getStorageItem('lastListening');
+  const saveCurrentAyah =
+    lastListening &&
+    lastListening.completed === false &&
+    lastListening.AyahItem?.verseKey &&
+    lastListening.SurahItem
+      ? lastListening
+      : null;
   const bookmarksList = getStorageItem('bookmark');
   const isArabic = getStorageItem('isArabic');
   const isTranslation = getStorageItem('isTranslation');
@@ -269,7 +287,7 @@ useEffect(() => {
       !isValidVerseKey(chaptersData, chapterIdOrVerseKeyOrSlug)
     ) {
       if (AYAH_KURSI_SLUGS.includes(chapterIdOrVerseKeyOrSlug.toLowerCase())) {
-        chapterIdOrVerseKeyOrSlug = '2:255';
+        chapterIdOrVerseKeyOrSlug = AYAH_KURSI_VERSE_KEY;
       } else {
         const sluggedChapterId = await getChapterIdBySlug(
           chapterIdOrVerseKeyOrSlug,
@@ -943,14 +961,14 @@ const onClickPlaySettingNew = async () => {
       selectedAyahItems: saveCurrentAyah?.AyahItem,
       selectedSurahItems: saveCurrentAyah?.SurahItem,
       fromBookmarkAyah: true,
-      ayahKeyFromBookmark: item?.BookmarkAyahItem?.verseKey,
+      ayahKeyFromBookmark: saveCurrentAyah?.AyahItem?.verseKey,
       ayahIdFromBookmark: saveCurrentAyah?.AyahItem?.id,
     });
   };
 
   const onClickNo = () => {
     setLastPlayAyahVisible(false);
-    setStorageItem('saveCurrentAyah', []);
+    setStorageItem('lastListening', {...(lastListening || {}), completed: true});
     if (fromPlayIcon) {
       onPressAyahPlayIcon(selectedAyah?.verseNumber);
     } else {
@@ -961,7 +979,7 @@ const onClickPlaySettingNew = async () => {
   useEffect(() => {
   dispatch(setSpeedCounting(0));  
   speedRef.current = 0;        
-  }, []);
+  }, [dispatch]);
 
   useEffect(() => {
     if (!eventListenerAdded.current) {
@@ -1076,6 +1094,8 @@ const onClickPlaySettingNew = async () => {
   );
 
   const getAudioUrlData = async (reciter_id, isReset) => {
+    let errorStatus;
+    let errorMessage;
     let audioData = {};
     try {
        if (from === 'ruku') {
@@ -2047,7 +2067,7 @@ const onClickPlaySettingNew = async () => {
                   setFromPlayIcon(false);
                   if (!global.isFirstTime && !isPlaying) {
                     global.isFirstTime = true;
-                    if (!isEmpty(saveCurrentAyah)) {
+                    if (ENABLE_RESUME_PROMPT && !isEmpty(saveCurrentAyah)) {
                       setLastPlayAyahVisible(true);
                     } else {
                       onClickPlayCircle();

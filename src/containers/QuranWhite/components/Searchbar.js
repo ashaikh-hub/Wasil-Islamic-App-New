@@ -79,7 +79,6 @@ const styles = ScaledSheet.create({
   },
   rightIconView: {
     alignItems: 'flex-end',
-    justifyContent: 'center',
     marginLeft: '8@s',
     alignSelf: 'center',
     justifyContent: 'center',
